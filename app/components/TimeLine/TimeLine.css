@@ -1,0 +1,6 @@
+.TimeLine{
+    width: 100%;
+    height: calc(100% - 131px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

@@ -1,0 +1,26 @@
+.headerMain{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #43433F;
+}
+.headerLeft{
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 0;
+}
+.headerCenter{
+    margin: auto;
+
+}
+.headerTitle{
+    color: #F8F70A;
+    font-weight: 700;
+    font-size: 140%;
+}
+.headerRight{
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 20px;
+}
