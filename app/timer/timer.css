@@ -96,3 +96,6 @@ border-radius: 50%;
     font-size: 200%;
     margin-top: 10px;
 }
+.TimerNowStudyingButtons{
+    display: flex;
+}

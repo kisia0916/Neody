@@ -1,5 +1,6 @@
 import React from 'react'
 import "./timer.css"
+import TimerStopButton from '../components/TimerStopButton/TimerStopButton'
 
 function Timer() {
   return (
@@ -17,13 +18,16 @@ function Timer() {
           </div>
           <div className='TimerNowStudyingSubjectWrap'>
             <div className='TimerNowStudyingSubject'>
-              <span className='TimerNowStudyingSubjectText'>サクシード数ⅠA</span>
+              <span className='TimerNowStudyingSubjectText'>数学</span>
             </div>
           </div>
           <div className='TimerNowStudyingTimeWarp'>
             <div className='TimerNowStudyingTime'>
               <span className=''>00:24:00</span>
             </div>
+          </div>
+          <div className='TimerNowStudyingButtons'>
+            <TimerStopButton/>
           </div>
         </div>
       </div>
