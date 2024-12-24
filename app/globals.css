@@ -19,6 +19,8 @@ p{
   padding: 0;
 }
 .home{
-  width: 100%;
+    width: 100%;
     height: calc(100dvh - 48px - 50px);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }

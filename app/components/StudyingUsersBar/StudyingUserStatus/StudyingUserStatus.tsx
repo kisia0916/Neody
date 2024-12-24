@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import "./StudyingUserStatus.css"
 import StudyingUserMess from './StudyingUserMess/StudyingUserMess'

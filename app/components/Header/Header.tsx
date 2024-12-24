@@ -1,17 +1,20 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import "./Header.css"
-import WeekPoint from '../WeekPoint/WeekPoint'
+import { usePathname } from 'next/navigation'
+import MainHeader from './MainHeader/MainHeader'
+import TimeHeader from './TimerHeader/TimeHeader'
+import ProfileHeader from './ProfileHeader/ProfileHeader'
 
 function Header() {
+  const pathname = usePathname()
+
   return (
-    <div className='headerMain'>
-        <div className='headerLeft'>
-          <span className='headerTitle'>Neody</span>
-        </div>
-        <div className='headerRight'>
-          <WeekPoint/>
-        </div>
-    </div>
+    <>
+      {pathname === "/"?<MainHeader/>:<></>}
+      {pathname === "/timer"?<TimeHeader/>:<></>}
+      {pathname.split("/")[1] === "profile"?<ProfileHeader/>:<></>}
+    </>
   )
 }
 

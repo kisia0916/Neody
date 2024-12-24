@@ -1,5 +1,6 @@
-import React from 'react'
 import "./TimeLine.css"
+import React from 'react'
+
 import UserStudyRecord from '../UserStudyRecord/UserStudyRecord'
 
 function TimeLine() {

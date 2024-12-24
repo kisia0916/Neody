@@ -18,7 +18,7 @@ function Timer() {
           </div>
           <div className='TimerNowStudyingSubjectWrap'>
             <div className='TimerNowStudyingSubject'>
-              <span className='TimerNowStudyingSubjectText'>数学</span>
+              <span className='TimerNowStudyingSubjectText'>サクシード数ⅠA</span>
             </div>
           </div>
           <div className='TimerNowStudyingTimeWarp'>

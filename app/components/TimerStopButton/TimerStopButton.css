@@ -1,4 +1,14 @@
 .TimerStopButton{
-
-    
+    width: 130px;
+    height: 50px;
+    background-color: #fefe36;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+}
+.TimerStopButtonText{
+    font-weight: 700;
+    margin: auto;
+    color: #1E1D1B;
 }

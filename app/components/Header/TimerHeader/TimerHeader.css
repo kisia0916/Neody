@@ -1,0 +1,54 @@
+.TimerHeaderMain{
+    width: 100%;
+    height: 48px;
+    display: flex;
+}
+.TimerHeaderWithText{
+    color: #FEFD36;
+    font-size: 120%;
+    font-weight: 700;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.TimerHeaderWithWithUsers{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    margin-top: 13px;
+    margin-left: 8px;
+    position: relative;
+}
+.TimerHeaderWithWithUserIcon{
+    width: 23px;
+    height: 23px;
+    border-radius: 50px;
+    position: absolute;
+    border: solid 1px #43433F;
+
+}
+
+.WithNo2{
+    margin-left:18px;
+}
+.WithNo3{
+    margin-left:36px;
+}
+.WithNo4{
+    margin-left:54px;
+}
+.TimerHeaderWithWithUsersEndMark{
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    background: #43433F;
+    border-radius: 50px;
+    display: flex;
+    color: white;
+    font-size: 70%;
+}
+.TimerHeaderWithWithUsersEndMarkText{
+    margin: auto;
+    font-weight: 700;
+}
