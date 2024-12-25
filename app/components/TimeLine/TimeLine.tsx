@@ -10,7 +10,6 @@ function TimeLine() {
       <UserStudyRecord/>
       <UserStudyRecord/>
       <UserStudyRecord/>
-
     </div>
   )
 }

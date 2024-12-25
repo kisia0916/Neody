@@ -1,9 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import "./NavigationBar.css"
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 
 function NavigationBar() {
     const pathname = usePathname()
@@ -11,7 +10,7 @@ function NavigationBar() {
     const ignorePaths = [
         "/timer",
     ]
-    const [nowNavigationStatus,setNowNavigationStatus] = useState("home")
+    // const [nowNavigationStatus,setNowNavigationStatus] = useState("home")
     const navigatePage = (path:string)=>{
         router.push(path)
     }

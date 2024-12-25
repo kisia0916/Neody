@@ -1,5 +1,5 @@
 import React from 'react'
-import WeekPoint from '../../WeekPoint/WeekPoint'
+import WeekPoint from '../../PointViewer/WeekPoint/WeekPoint'
 import "./MainHeader.css"
 
 function MainHeader() {
@@ -9,7 +9,7 @@ function MainHeader() {
       <span className='headerTitle'>Neody</span>
     </div>
     <div className='headerRight'>
-      <WeekPoint/>
+      <WeekPoint type='S'/>
         </div>
     </div>
   )

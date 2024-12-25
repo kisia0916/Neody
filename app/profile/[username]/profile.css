@@ -38,6 +38,8 @@
     color: white;
 }
 
+
+
 .ProfileUserWeekPointTitle{
     margin: auto;
     margin-left: 8px;
@@ -55,6 +57,12 @@
     display: flex;
     margin-right: 8px;
 }
+.ProfileUserWeekPointPoint{
+    margin: auto;
+    margin-right: 8px;
+    color:#43433F;
+    font-weight: 700;
+}
 .ProfileUserWeekPoint2{
     background-image: linear-gradient( 135deg, #FFF720 10%, #3CD500 100%);
     border-radius: 50px;
@@ -67,12 +75,7 @@
     margin-left: 10px;
     margin-top: 10px;
 }
-.ProfileUserWeekPointPoint{
-    margin: auto;
-    margin-right: 8px;
-    color:#43433F;
-    font-weight: 700;
-}
+
 .ProfileUserName{
     display: flex;
     color: white;

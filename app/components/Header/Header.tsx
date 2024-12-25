@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./Header.css"
 import { usePathname } from 'next/navigation'
 import MainHeader from './MainHeader/MainHeader'

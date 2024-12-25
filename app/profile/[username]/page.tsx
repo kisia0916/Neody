@@ -1,7 +1,10 @@
-"use client"
+//server component
 import React from 'react'
-// import "./profile.css"
+import "./profile.css"
 import UserStudyRecord from '@/app/components/UserStudyRecord/UserStudyRecord'
+import UserStudyList from '@/app/components/UserStudyRecord/UserStudyRevordList/UserStudyList'
+import WeekPoint from '@/app/components/PointViewer/WeekPoint/WeekPoint'
+import AllPoint from '@/app/components/PointViewer/AllPoint/AllPoint'
 
 function page() {
   return (
@@ -16,12 +19,8 @@ function page() {
                         <span className='ProfileUserName'>fumi0916</span>
                         <span className='ProfileUserFriends'>25人のフレンド</span>
                         <div className='ProfileUserPoints'>
-                            <div className='ProfileUserWeekPoint'>
-                                <span className='ProfileUserWeekPointTitle'>今週</span><span className='ProfileUserWeekPointPoint'>1600pt</span>
-                            </div>
-                            <div className='ProfileUserWeekPoint2'>
-                                <span className='ProfileUserWeekPointTitle'>累計</span><span className='ProfileUserWeekPointPoint'>1600pt</span>
-                            </div>
+                            <WeekPoint type='L'/>
+                            <AllPoint type='L'/>
                         </div>
                     </div>
                 </div>
@@ -40,12 +39,7 @@ function page() {
                 <span className='ProfileContentSelectorButtonText'>グラフ</span>
             </div>
         </div>
-        <div className='ProfileUserRecords'>
-            <UserStudyRecord/>
-            <UserStudyRecord/>
-            <UserStudyRecord/>
-            <UserStudyRecord/>
-        </div>
+        <UserStudyList/>
     </div>
   )
 }

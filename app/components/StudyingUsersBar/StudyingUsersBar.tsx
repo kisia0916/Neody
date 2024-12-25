@@ -1,3 +1,4 @@
+//server component
 import React from 'react'
 import StudyingUserStatus from './StudyingUserStatus/StudyingUserStatus'
 import "./StudyingUsersBar.css"

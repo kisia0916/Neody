@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import "./timer.css"
 import TimerStopButton from '../components/TimerStopButton/TimerStopButton'
