@@ -5,8 +5,10 @@ import UserStudyRecord from '@/app/components/UserStudyRecord/UserStudyRecord'
 import UserStudyList from '@/app/components/UserStudyRecord/UserStudyRevordList/UserStudyList'
 import WeekPoint from '@/app/components/PointViewer/WeekPoint/WeekPoint'
 import AllPoint from '@/app/components/PointViewer/AllPoint/AllPoint'
+import { auth } from '@/auth'
 
-function page() {
+async function page() {
+
   return (
     <div className='ProfilePage'>
         <div className='ProfileTop'>
@@ -27,6 +29,7 @@ function page() {
             </div>
             <div className='ProfileTopInfoWarp'>
                 <div className='ProfileTopInfo'>
+                    <p className='ProfileTopProfileText'>@kisia0012</p>
                     <span className='ProfileTopProfileText'>数学を頑張っていきたいです</span>
                 </div>
             </div>

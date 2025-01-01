@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import NewButton from "./components/NewButton/NewButton";
 
+
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
 //   subsets: ["latin"],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 //   "timer"
 // ]
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
