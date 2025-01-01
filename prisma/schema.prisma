@@ -13,46 +13,46 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id  String @id @default(auto()) @map("_id") @db.ObjectId
-  userId  String @unique
-  userName String
-  email String @unique
-  userIcon  String
-  profileMess String?
-  weekPoints Int @default(0)
-  allPoints Int @default(0)
-  joinedGroup Group? @relation(fields: [joinedGroupId],references: [id])
-  joinedGroupId String? @db.ObjectId
-  lastStudyDate DateTime?
-  nowStudyStreak Int @default(0)
-  maxStudyStreak Int  @default(0)
-  createdAt DateTime @default(now())
+  id               String    @id @default(auto()) @map("_id") @db.ObjectId
+  userId           String    @unique
+  userName         String
+  email            String    @unique
+  userIcon         String
+  profileMess      String?
+  weekPoints       Int       @default(0)
+  allPoints        Int       @default(0)
+  joinedGroup      Group?    @relation(fields: [joinedGroupId], references: [id])
+  joinedGroupId    String?   @db.ObjectId
+  lastStudyDate    DateTime?
+  nowStudyStreak   Int       @default(0)
+  maxStudyStreak   Int       @default(0)
+  firstSettingDone Boolean   @default(false)
+  createdAt        DateTime  @default(now())
 }
 
 model Group {
-  id  String @id @default(auto()) @map("_id") @db.ObjectId
-  groupName String
-  groupIcon String
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  groupName  String
+  groupIcon  String
   hostUserId String
-  WeekPoint Int @default(0)
-  allPoint Int @default(0)
-  members User[]
+  WeekPoint  Int    @default(0)
+  allPoint   Int    @default(0)
+  members    User[]
 }
 
 model Friends {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  userId String
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId       String
   friendUserId String
-  createdAt DateTime @default(now())
+  createdAt    DateTime @default(now())
 }
 
 model UserStudyRecord {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
   withUsers String[]
-  message String?
-  subject String
+  message   String?
+  subject   String
   studyTime Int
   createdAt DateTime
 }

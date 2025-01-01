@@ -5,7 +5,7 @@ export async function middleware(request:NextRequest){
     const session = await auth()
     if (!session){
         const url = request.nextUrl.clone()
-        url.pathname = "/login"
+        url.pathname = "/signin"
         return NextResponse.redirect(url)
     }
 }

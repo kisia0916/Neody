@@ -14,7 +14,7 @@ export const { auth, handlers, signIn, signOut } = NextAuth({
         expiresIn:"1h"
       }
       const token = jwt.sign(user,jwtSecret,options)
-      const res = await fetch("http://localhost:3000/api/user/create_new_user",{
+      const res = await fetch("http://localhost:3000/api/user/signin",{
         method:"POST",
         headers:{
           "Content-type":"application/json"
